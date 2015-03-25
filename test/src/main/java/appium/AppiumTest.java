@@ -19,7 +19,7 @@ import org.junit.Test;
 import org.openqa.selenium.ScreenOrientation;
 
 /**
- * Created by asih on 16/02/2015.
+ * Created by asih on 16/02/2015./
  */
 public class AppiumTest extends BaseTest {
 
