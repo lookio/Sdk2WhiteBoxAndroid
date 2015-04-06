@@ -17,7 +17,7 @@ public class BaseTest  {
 
 
     public void setUp(AppiumDrivers driver, ConfigItemsRouter.ConfigType confType, String testPath) throws Exception {
-        service.setDriver(AppiumDrivers.ANDROID, testPath);
+//        service.setDriver(AppiumDrivers.ANDROID, testPath);
         if(confType != null) {
             ConfigItemsRouter.getInstance().routeAction(confType, testPath);
         }

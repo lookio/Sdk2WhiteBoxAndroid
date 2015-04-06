@@ -13,8 +13,6 @@
         <password>12345678</password>
         <email>aconboarding@gmail.com</email>
         <!--1 or more repetitions:-->
-        <skill>mobile</skill>
-        <skill>Sales</skill>
       </create_user>
       <modify_user>
         <siteId>string</siteId>
@@ -24,6 +22,8 @@
         <deleteSkillData>string</deleteSkillData>
         <deleteUserData>string</deleteUserData>
       </delete_user>
+    </users_data>
+    <users_data>
       <create_user>
         <userType>Agent</userType>
         <user>agent1</user>
@@ -32,6 +32,25 @@
         <!--1 or more repetitions:-->
         <skill>mobile</skill>
         <skill>tectSupport</skill>
+      </create_user>
+      <modify_user>
+        <siteId>string</siteId>
+      </modify_user>
+      <delete_user>
+        <siteId>string</siteId>
+        <deleteSkillData>string</deleteSkillData>
+        <deleteUserData>string</deleteUserData>
+      </delete_user>
+    </users_data>
+    <users_data>
+      <create_user>
+        <userType>Agent</userType>
+        <user>agent2</user>
+        <password>12345678</password>
+        <email>asihhh@liveperson.com</email>
+        <!--1 or more repetitions:-->
+        <skill>mobile</skill>
+        <skill>sales</skill>
       </create_user>
       <modify_user>
         <siteId>string</siteId>
