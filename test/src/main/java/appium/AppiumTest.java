@@ -20,7 +20,7 @@ import org.openqa.selenium.ScreenOrientation;
 
 /**
  * Created by asih on 16/02/2015./
- */
+ */    
 public class AppiumTest extends BaseTest {
 
     private static final String testDir = "C:\\Users\\asih\\IdeaProjects\\Sdk2WhiteBoxAndroid\\test\\src\\main\\resources\\test1\\";
