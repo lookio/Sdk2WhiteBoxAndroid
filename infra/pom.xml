@@ -20,13 +20,13 @@
             <!--<version>1.0.0.0-SNAPSHOT</version>-->
         <!--</dependency>-->
 
-        <dependency>
-            <groupId>com.liveperson.automation.mobile</groupId>
-            <artifactId>automationCommon</artifactId>
-            <version>1.0.0.0-SNAPSHOT</version>
-            <scope>system</scope>
-            <systemPath>C:/Users/asih/IdeaProjects/AutomationCommon/target/automationCommon-1.0.0.0-SNAPSHOT.jar</systemPath>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.liveperson.automation.mobile</groupId>-->
+            <!--<artifactId>automationCommon</artifactId>-->
+            <!--<version>1.0.0.0-SNAPSHOT</version>-->
+            <!--<scope>system</scope>-->
+            <!--<systemPath>C:/Users/asih/IdeaProjects/AutomationCommon/target/automationCommon-1.0.0.0-SNAPSHOT.jar</systemPath>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>com.liveperson.provisioning</groupId>

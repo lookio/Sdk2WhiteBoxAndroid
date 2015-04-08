@@ -11,10 +11,12 @@
     <orderEntry type="module-library">
       <library name="Maven: com.liveperson.automation.mobile:automationCommon:1.0.0.0-SNAPSHOT">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../AutomationCommon/target/automationCommon-1.0.0.0-SNAPSHOT.jar!/" />
+          <root url="jar://$MAVEN_REPOSITORY$/com/liveperson/automation/mobile/automationCommon/1.0.0.0-SNAPSHOT/automationCommon-1.0.0.0-SNAPSHOT.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$MAVEN_REPOSITORY$/com/liveperson/automation/mobile/automationCommon/1.0.0.0-SNAPSHOT/automationCommon-1.0.0.0-SNAPSHOT-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="library" name="Maven: junit:junit:4.11" level="project" />
