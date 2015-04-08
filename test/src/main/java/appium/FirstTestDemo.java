@@ -18,7 +18,7 @@ import org.openqa.selenium.ScreenOrientation;
  */
 public class FirstTestDemo extends BaseTest {
 
-    private static final String testDir = "C:\\Users\\asih\\IdeaProjects\\Sdk2WhiteBoxAndroid\\test\\src\\main\\resources\\first_test_demo\\";
+    private static final String testDir = "./src/main/resources/test1/";
     private DemoActivator demo = DemoActivator.getInstance();
     private ChatActivator chat = ChatActivator.getInstance();
     private static final Logger logger = Logger.getLogger(FirstTestDemo.class);

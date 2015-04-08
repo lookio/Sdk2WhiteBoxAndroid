@@ -23,7 +23,7 @@ import org.openqa.selenium.ScreenOrientation;
  */    
 public class AppiumTest extends BaseTest {
 
-    private static final String testDir = "C:\\Users\\asih\\IdeaProjects\\Sdk2WhiteBoxAndroid\\test\\src\\main\\resources\\test1\\";
+    private static final String testDir = "./src/main/resources/test1/";
     private DemoActivator demo = DemoActivator.getInstance();
     private ChatActivator chat = ChatActivator.getInstance();
     private ServeActivator serve = ServeActivator.getInstance();
