@@ -1,6 +1,5 @@
 package com.service.activate;
 
-import com.sun.istack.NotNull;
 import com.pages.Serve;
 import org.apache.log4j.Logger;
 
@@ -21,7 +20,7 @@ public class ServeActivator {
     }
 
     public void feedServeInfo(
-            @NotNull Serve.Satisfection rate, @NotNull boolean isResolved, @NotNull boolean isSendTranscript, @NotNull String email) throws Exception{
+            Serve.Satisfection rate, boolean isResolved, boolean isSendTranscript, String email) throws Exception{
         serve.getValidate();
         serve.prepareElements();
         serve.getActivate().feedServeInfo(rate, isResolved, isSendTranscript, email);

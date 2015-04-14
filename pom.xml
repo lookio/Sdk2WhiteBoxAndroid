@@ -45,6 +45,18 @@
             <systemPath>C:/Users/asih/.m2/repository/com/liveperson/automation/mobile/automationCommon/1.0.0.0-SNAPSHOT/automationCommon-1.0.0.0-SNAPSHOT.jar</systemPath>
         </dependency>
 
+        <dependency>
+            <groupId>com.liveperson.automation</groupId>
+            <artifactId>e2e-common</artifactId>
+            <version>${e2ecommon.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.liveperson</groupId>
+            <artifactId>RestApiCommon</artifactId>
+            <version>2.0.0.7-20150330.061035-1</version>
+        </dependency>
+
 
     <dependency>
         <groupId>junit</groupId>
@@ -77,12 +89,24 @@
     </dependency>
 
         <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpcore</artifactId>
-            <version>4.4</version>
+            <groupId>sun-jaxb</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>2.1.9</version>
         </dependency>
 
 
+        <!--<dependency>-->
+        <!--<groupId>org.hibernate</groupId>-->
+        <!--<artifactId>hibernate-parent</artifactId>-->
+        <!--<version>3.3.2</version>-->
+
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.httpcomponents</groupId>-->
+            <!--<artifactId>httpcore</artifactId>-->
+            <!--<version>4.4</version>-->
+        <!--</dependency>-->
 
 
         <!--<dependency>-->

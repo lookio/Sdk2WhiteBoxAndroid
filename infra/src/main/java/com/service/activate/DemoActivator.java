@@ -1,6 +1,5 @@
 package com.service.activate;
 
-import com.sun.istack.NotNull;
 import com.pages.*;
 import com.service.validate.DemoValidator;
 import org.apache.log4j.Logger;
@@ -30,37 +29,37 @@ public class DemoActivator {
         return INSTANCE;
     }
 
-    public void chooseCostumerType(@NotNull ChooseCustomerType.CustomerType type) throws Exception{
+    public void chooseCostumerType(ChooseCustomerType.CustomerType type) throws Exception{
         costumerType.getValidate();
         costumerType.prepareElements();
         costumerType.getActivate().chooseCostumerType(type);
     }
 
-    public void feedAccountDetails(@NotNull String _accountId, @NotNull String _userName, @NotNull String _password) throws Exception{
+    public void feedAccountDetails(String _accountId, String _userName, String _password) throws Exception{
         accountLogin.getValidate();
         accountLogin.prepareElements();
         accountLogin.getActivate().feedAccountDetails(_accountId, _userName, _password);
     }
 
-    public void chooseChatType(@NotNull ChooseChatType.ChatType type) throws Exception{
+    public void chooseChatType(ChooseChatType.ChatType type) throws Exception{
         choose.getValidate();
         choose.prepareElements();
         choose.getActivate().chooseChatType(type);
     }
 
-    public void findApp(@NotNull String app) throws Exception{
+    public void findApp(String app) throws Exception{
         appSearch.getValidate();
         appSearch.prepareElements();
         appSearch.getActivate().feedAppName(app);
         appSearch.getActivate().findApp();
     }
 
-    public void startDemo(@NotNull String app) throws Exception{
+    public void startDemo(String app) throws Exception{
         chooseApp(app);
         enterDemo();
     }
 
-    public void chooseApp(@NotNull String app) throws Exception{
+    public void chooseApp(String app) throws Exception{
         chooseApp.getValidate();
         chooseApp.prepareElements();
         chooseApp.getActivate().chooseApp(app);;
