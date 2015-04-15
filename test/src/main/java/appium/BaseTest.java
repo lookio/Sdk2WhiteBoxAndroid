@@ -28,7 +28,7 @@ public class BaseTest  {
 
     public void setUp(AppiumDrivers driver, ConfigItemsRouter.ConfigType confType, String testPath) throws Exception {
         java.net.URL url = getClass().getResource(getProps().getProperty(LOG4J_PROP_FILE_PATH_KEY_VALUE));
-        PropertyConfigurator.configure(url);
+        PropertyConfigurator.configure(url);   
         service.setDriver(driver, testPath);
         if(confType != null) {
             ConfigItemsRouter.getInstance().routeAction(confType, testPath);
