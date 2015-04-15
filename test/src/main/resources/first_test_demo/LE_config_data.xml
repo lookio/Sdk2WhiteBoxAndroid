@@ -49,7 +49,6 @@
         <password>12345678</password>
         <email>asihhh@liveperson.com</email>
         <!--1 or more repetitions:-->
-     <skill>mobile</skill>
     <skill>sales</skill>
   </create_user>
   <modify_user>
