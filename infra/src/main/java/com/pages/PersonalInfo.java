@@ -53,6 +53,7 @@ public class PersonalInfo extends AppiumBasePage {
 
 
     public class Validate {
+
     }
 
     @Override

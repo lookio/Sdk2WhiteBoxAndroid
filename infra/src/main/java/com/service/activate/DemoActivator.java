@@ -30,25 +30,25 @@ public class DemoActivator {
     }
 
     public void chooseCostumerType(ChooseCustomerType.CustomerType type) throws Exception{
-        costumerType.getValidate();
+        costumerType.validateInPage();
         costumerType.prepareElements();
         costumerType.getActivate().chooseCostumerType(type);
     }
 
     public void feedAccountDetails(String _accountId, String _userName, String _password) throws Exception{
-        accountLogin.getValidate();
+        accountLogin.validateInPage();
         accountLogin.prepareElements();
         accountLogin.getActivate().feedAccountDetails(_accountId, _userName, _password);
     }
 
     public void chooseChatType(ChooseChatType.ChatType type) throws Exception{
-        choose.getValidate();
+        choose.validateInPage();
         choose.prepareElements();
         choose.getActivate().chooseChatType(type);
     }
 
     public void findApp(String app) throws Exception{
-        appSearch.getValidate();
+        appSearch.validateInPage();
         appSearch.prepareElements();
         appSearch.getActivate().feedAppName(app);
         appSearch.getActivate().findApp();
@@ -60,19 +60,19 @@ public class DemoActivator {
     }
 
     public void chooseApp(String app) throws Exception{
-        chooseApp.getValidate();
+        chooseApp.validateInPage();
         chooseApp.prepareElements();
         chooseApp.getActivate().chooseApp(app);;
     }
 
     public void enterDemo() throws Exception{
-        demo.getValidate();
+        demo.validateInPage();
         demo.prepareElements();
         demo.getActivate().startDemo();
     }
 
     public void enterChat() throws Exception{
-        engage.getValidate();
+        engage.validateInPage();
         engage.prepareElements();
         engage.getActivate().enterChat();
     }

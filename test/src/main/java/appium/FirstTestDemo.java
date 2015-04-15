@@ -40,6 +40,7 @@ public class FirstTestDemo extends BaseTest {
         demo.startDemo("Google");
         demo.enterChat();
         chat.feedPersonalInfo("Asid", "asdih@liveperson.com", "0544636220", ChooseCustomerType.CustomerType.EXISTING_COSTUMER);
+        chat.sendChatMsg("Asi is the king");
     }
 
     @After

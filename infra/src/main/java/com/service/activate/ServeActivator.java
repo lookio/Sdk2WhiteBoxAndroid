@@ -21,7 +21,7 @@ public class ServeActivator {
 
     public void feedServeInfo(
             Serve.Satisfection rate, boolean isResolved, boolean isSendTranscript, String email) throws Exception{
-        serve.getValidate();
+        serve.validateInPage();
         serve.prepareElements();
         serve.getActivate().feedServeInfo(rate, isResolved, isSendTranscript, email);
     }

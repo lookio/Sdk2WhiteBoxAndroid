@@ -25,13 +25,13 @@ public class ChatActivator {
     }
 
     public void feedPersonalInfo(String name, String email, String phone, ChooseCustomerType.CustomerType type) throws Exception {
-        info.getValidate();
+        info.validateInPage();
         info.prepareElements();
         info.getActivate().feedPersonalInfo(name, email, phone, type);
     }
 
     public void sendChatMsg(String msg) throws Exception {
-        chatPage.getValidate();
+        chatPage.validateInPage();
         chatPage.prepareElements();
         chatPage.getActivate().sendMsg(msg);
     }
