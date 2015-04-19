@@ -1,7 +1,6 @@
 package com.service.activate;
 
 import com.pages.ChooseCustomerType;
-import com.sun.istack.NotNull;
 import com.pages.Chat;
 import com.pages.PersonalInfo;
 import org.apache.log4j.Logger;
@@ -25,14 +24,14 @@ public class ChatActivator {
         return INSTANCE;
     }
 
-    public void feedPersonalInfo(@NotNull String name, @NotNull String email, String phone, ChooseCustomerType.CustomerType type) throws Exception {
-        info.getValidate();
+    public void feedPersonalInfo(String name, String email, String phone, ChooseCustomerType.CustomerType type) throws Exception {
+        info.validateInPage();
         info.prepareElements();
         info.getActivate().feedPersonalInfo(name, email, phone, type);
     }
 
-    public void sendChatMsg(@NotNull String msg) throws Exception {
-        chatPage.getValidate();
+    public void sendChatMsg(String msg) throws Exception {
+        chatPage.validateInPage();
         chatPage.prepareElements();
         chatPage.getActivate().sendMsg(msg);
     }

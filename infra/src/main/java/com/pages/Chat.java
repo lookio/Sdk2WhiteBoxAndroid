@@ -47,6 +47,7 @@ public class Chat extends AppiumBasePage {
     }
 
     public class Validate {
+
     }
 
     @Override

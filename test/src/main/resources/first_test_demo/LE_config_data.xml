@@ -1,36 +1,69 @@
 <le_config_data>
   <site>
     <create_site>
-      <siteId>Lm987h</siteId>
-      <siteUrl>http://site.lp.com</siteUrl>
+      <siteId>6468850</siteId>
+      <isExtentExpiration>true</isExtentExpiration>
+      <creationType>CreateNew</creationType>
     </create_site>
-    <!--<modify_site>-->
-      <!--<siteId>string</siteId>-->
-      <!--<siteUrl>string</siteUrl>-->
-    <!--</modify_site>-->
-    <!--<delete_site>-->
-      <!--<siteId>string</siteId>-->
-      <!--<siteUrl>string</siteUrl>-->
-    <!--</delete_site>-->
     <!--1 or more repetitions:-->
     <users_data>
       <create_user>
-        <siteId>Lm987h</siteId>
+        <userType>Administrator</userType>
+        <user>admin</user>
+        <password>12345678</password>
+        <email>aconboarding@gmail.com</email>
         <!--1 or more repetitions:-->
-        <skill>Manager</skill>
-        <skill>Sales</skill>
       </create_user>
       <modify_user>
         <siteId>string</siteId>
       </modify_user>
       <delete_user>
         <siteId>string</siteId>
+        <deleteSkillData>string</deleteSkillData>
+        <deleteUserData>string</deleteUserData>
       </delete_user>
     </users_data>
-    <!--1 or more repetitions:-->
+    <users_data>
+      <create_user>
+        <userType>Agent</userType>
+        <user>agent1</user>
+        <password>12345678</password>
+        <email>asih@liveperson.com</email>
+        <!--1 or more repetitions:-->
+        <skill>mobile</skill>
+        <skill>tectSupport</skill>
+      </create_user>
+      <modify_user>
+        <siteId>string</siteId>
+      </modify_user>
+      <delete_user>
+        <siteId>string</siteId>
+        <deleteSkillData>string</deleteSkillData>
+        <deleteUserData>string</deleteUserData>
+      </delete_user>
+    </users_data>
+    <users_data>
+      <create_user>
+        <userType>Agent</userType>
+        <user>agent2</user>
+        <password>12345678</password>
+        <email>asihhh@liveperson.com</email>
+        <!--1 or more repetitions:-->
+    <skill>sales</skill>
+  </create_user>
+  <modify_user>
+    <siteId>string</siteId>
+  </modify_user>
+  <delete_user>
+    <siteId>string</siteId>
+    <deleteSkillData>string</deleteSkillData>
+    <deleteUserData>string</deleteUserData>
+  </delete_user>
+</users_data>
+<!--1 or more repetitions:-->
     <visitors_data>
       <create_visitors>
-        <siteId>Lm987h</siteId>
+        <siteId>string</siteId>
       </create_visitors>
       <modify_visitors>
         <siteId>string</siteId>
@@ -39,19 +72,6 @@
         <siteId>string</siteId>
       </delete_visitors>
     </visitors_data>
-
-    <visitors_data>
-      <create_visitors>
-        <siteId>Lm987h</siteId>
-      </create_visitors>
-      <modify_visitors>
-        <siteId>string</siteId>
-      </modify_visitors>
-      <delete_visitors>
-        <siteId>string</siteId>
-      </delete_visitors>
-    </visitors_data>
-
     <!--1 or more repetitions:-->
     <campaign_data>
       <create_campaign>

@@ -18,7 +18,7 @@ import org.openqa.selenium.ScreenOrientation;
  */
 public class FirstTestDemo extends BaseTest {
 
-    private static final String testDir = "C:\\Users\\asih\\IdeaProjects\\Sdk2WhiteBoxAndroid\\test\\src\\main\\resources\\first_test_demo\\";
+    private static final String testDir = "./src/main/resources/first_test_demo/";
     private DemoActivator demo = DemoActivator.getInstance();
     private ChatActivator chat = ChatActivator.getInstance();
     private static final Logger logger = Logger.getLogger(FirstTestDemo.class);
@@ -26,7 +26,9 @@ public class FirstTestDemo extends BaseTest {
 
     @Before
     public void setUp() throws Exception {
-        super.setUp(AppiumDrivers.ANDROID, ConfigItemsRouter.ConfigType.LECreate, testDir);
+        super.setUp(
+                AppiumDrivers.ANDROID,
+                ConfigItemsRouter.ConfigType.LECreate, testDir);
     }
 
     @Test
@@ -39,6 +41,7 @@ public class FirstTestDemo extends BaseTest {
         demo.startDemo("Google");
         demo.enterChat();
         chat.feedPersonalInfo("Asid", "asdih@liveperson.com", "0544636220", ChooseCustomerType.CustomerType.EXISTING_COSTUMER);
+        chat.sendChatMsg("Asi is the king");
     }
 
     @After
