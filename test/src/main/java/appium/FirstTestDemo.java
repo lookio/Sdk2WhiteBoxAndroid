@@ -26,12 +26,13 @@ public class FirstTestDemo extends BaseTest {
 
     @Before
     public void setUp() throws Exception {
-        super.setUp(AppiumDrivers.ANDROID, ConfigItemsRouter.ConfigType.LECreate, testDir);
+        super.setUp(
+                AppiumDrivers.ANDROID,
+                ConfigItemsRouter.ConfigType.LECreate, testDir);
     }
 
     @Test
     public void apiDemo() throws Exception {
-        logger.info("hhh");
         demo.chooseCostumerType(ChooseCustomerType.CustomerType.EXISTING_COSTUMER);
         demo.feedAccountDetails("71807640", "asih@liveperson.com", "Carish74");
         super.service.rotate(ScreenOrientation.LANDSCAPE);
