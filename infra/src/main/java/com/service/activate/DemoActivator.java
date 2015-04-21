@@ -1,6 +1,7 @@
 package com.service.activate;
 
 import com.pages.*;
+import com.pages.demo_app.*;
 import com.service.validate.DemoValidator;
 import org.apache.log4j.Logger;
 

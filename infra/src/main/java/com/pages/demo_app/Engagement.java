@@ -1,9 +1,8 @@
-package com.pages;
-
-import org.openqa.selenium.Dimension;
+package com.pages.demo_app;
 
 import com.ui.page.AppiumBasePage;
 import com.ui.page.base.NotInPageException;
+import org.openqa.selenium.Dimension;
 
 /**
  * Created by asih on 11/03/2015.

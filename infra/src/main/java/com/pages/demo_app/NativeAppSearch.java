@@ -1,10 +1,9 @@
-package com.pages;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+package com.pages.demo_app;
 
 import com.ui.page.AppiumBasePage;
 import com.ui.page.base.NotInPageException;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 /**
  * Created by asih on 01/03/2015.

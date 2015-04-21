@@ -1,8 +1,8 @@
 package com.service.activate;
 
-import com.pages.ChooseCustomerType;
-import com.pages.Chat;
-import com.pages.PersonalInfo;
+import com.pages.demo_app.Chat;
+import com.pages.demo_app.ChooseCustomerType;
+import com.pages.demo_app.PersonalInfo;
 import org.apache.log4j.Logger;
 
 /**

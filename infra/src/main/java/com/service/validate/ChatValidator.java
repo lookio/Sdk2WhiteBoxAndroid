@@ -1,7 +1,8 @@
 package com.service.validate;
 
-import com.pages.Chat;
-import com.pages.PersonalInfo;
+
+import com.pages.demo_app.Chat;
+import com.pages.demo_app.PersonalInfo;
 import org.apache.log4j.Logger;
 
 /**

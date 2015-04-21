@@ -1,6 +1,10 @@
 package com.service.validate;
 
-import com.pages.*;
+
+import com.pages.demo_app.ChooseApp;
+import com.pages.demo_app.ChooseChatType;
+import com.pages.demo_app.ChooseCustomerType;
+import com.pages.demo_app.NativeAppSearch;
 import org.apache.log4j.Logger;
 
 /**

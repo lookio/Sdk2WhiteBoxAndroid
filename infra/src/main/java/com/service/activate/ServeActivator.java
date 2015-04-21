@@ -1,6 +1,7 @@
 package com.service.activate;
 
-import com.pages.Serve;
+
+import com.pages.demo_app.Serve;
 import org.apache.log4j.Logger;
 
 /**

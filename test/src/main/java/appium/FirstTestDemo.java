@@ -1,8 +1,8 @@
 package appium;
 
 import com.config.base.ConfigItemsRouter;
-import com.pages.ChooseChatType;
-import com.pages.ChooseCustomerType;
+import com.pages.demo_app.ChooseChatType;
+import com.pages.demo_app.ChooseCustomerType;
 import com.service.activate.ChatActivator;
 import com.service.activate.DemoActivator;
 import com.ui.service.drivers.AppiumDrivers;
