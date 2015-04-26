@@ -1,8 +1,6 @@
-package com.service.activate;
+package com.service.activate.echo_test;
 
-import com.pages.demo_app.Chat;
-import com.pages.demo_app.ChooseCustomerType;
-import com.pages.demo_app.PersonalInfo;
+import com.pages.echo_test.Chat;
 import org.apache.log4j.Logger;
 
 /**
@@ -13,7 +11,6 @@ public class ChatActivator {
     private static final ChatActivator INSTANCE = new ChatActivator();
     private static final Logger logger = Logger.getLogger(ChatActivator.class);
 
-    private PersonalInfo info = new PersonalInfo(true, true);
     private Chat chatPage = new Chat(true, true);
 
     private ChatActivator(){
@@ -22,12 +19,6 @@ public class ChatActivator {
 
     public static ChatActivator getInstance(){
         return INSTANCE;
-    }
-
-    public void feedPersonalInfo(String name, String email, String phone, ChooseCustomerType.CustomerType type) throws Exception {
-        info.validateInPage();
-        info.prepareElements();
-        info.getActivate().feedPersonalInfo(name, email, phone, type);
     }
 
     public void sendChatMsg(String msg) throws Exception {

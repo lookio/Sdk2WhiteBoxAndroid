@@ -1,5 +1,4 @@
-package com.service.validate;
-
+package com.service.validate.demo_app;
 
 import com.pages.demo_app.ChooseApp;
 import com.pages.demo_app.ChooseChatType;

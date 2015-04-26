@@ -1,5 +1,4 @@
-package com.service.validate;
-
+package com.service.validate.demo_app;
 
 import com.pages.demo_app.Chat;
 import com.pages.demo_app.PersonalInfo;

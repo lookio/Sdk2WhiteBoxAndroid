@@ -1,4 +1,4 @@
-package com.service.validate;
+package com.service.validate.demo_app;
 
 import com.pages.demo_app.Serve;
 import org.apache.log4j.Logger;
