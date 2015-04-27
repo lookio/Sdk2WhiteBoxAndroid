@@ -26,17 +26,17 @@ public class SettingsActivator {
         return INSTANCE;
     }
 
-    public void connectToAccount(String accountId, String userName, String password) throws Exception {
+    public void connectToAccount(String accountId) throws Exception {
         menu.validateInPage();
         menu.prepareElements();
         menu.getActivate().enterMenuSettings();
-        feedAccountInfo(accountId, userName, password);
+        feedAccountInfo(accountId);
     }
 
-    public void feedAccountInfo(String accountId, String userName, String password) throws Exception {
+    public void feedAccountInfo(String accountId) throws Exception {
         settings.validateInPage();
         settings.prepareElements();
-        settings.getActivate().feedAccountDetails(accountId, userName, password);
+        settings.getActivate().feedAccountDetails(accountId);
     }
 
 

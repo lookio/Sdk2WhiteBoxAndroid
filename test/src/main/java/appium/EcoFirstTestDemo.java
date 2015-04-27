@@ -5,7 +5,9 @@ import com.pages.demo_app.ChooseChatType;
 import com.pages.demo_app.ChooseCustomerType;
 import com.service.activate.demo_app.DemoActivator;
 import com.service.activate.echo_test.ChatActivator;
+import com.service.activate.echo_test.InfoActivator;
 import com.service.activate.echo_test.SettingsActivator;
+import com.service.validate.echo_test.ChatValidator;
 import com.ui.service.drivers.AppiumDrivers;
 import org.apache.log4j.Logger;
 import org.junit.After;
@@ -19,26 +21,36 @@ import org.openqa.selenium.ScreenOrientation;
  */
 public class EcoFirstTestDemo extends BaseTest {
 
-    private static final String testDir = "./src/main/resources/first_test_demo_eco/";
+    private static final String TEST_DIR = "./src/main/resources/first_test_demo/";
+    private static final String SITE_ID = "89961346";
     private SettingsActivator settingsActivator = SettingsActivator.getInstance();
+    private InfoActivator infoActivator = InfoActivator.getInstance();
     private ChatActivator chatActivator = ChatActivator.getInstance();
-    private static final Logger logger = Logger.getLogger(EcoFirstTestDemo.class);
+    private DemoActivator demoActivator = DemoActivator.getInstance();
+    private ChatValidator chatValidator = ChatValidator.getInstance();
 
 
     @Before
     public void setUp() throws Exception {
         super.setUp(
                 AppiumDrivers.ANDROID,
-                ConfigItemsRouter.ConfigType.LECreate, testDir);
+                ConfigItemsRouter.ConfigType.LECreate, TEST_DIR);
     }
 
     @Test
     public void apiDemo() throws Exception {
-        settingsActivator.connectToAccount("89961346", "asih@liveperson.com", "Carish74"); // no skill mobile
-        // verify no call in agent service
-        settingsActivator.connectToAccount("89961346", "asihiz@yahoo.com", "Carish74"); // with skill mobile
+        settingsActivator.connectToAccount(SITE_ID); // with skill mobile
+        infoActivator.setSkill("aaa", "mobile");
         // verify call in agent service
+        demoActivator.enterChat();
         chatActivator.sendChatMsg("Asi is the king");
+        chatActivator.ensSession();
+
+        infoActivator.setSkill("bbb", "sales");
+        demoActivator.enterChat();
+        chatValidator.validateNotInChat();
+        // verify no call in agent service
+
     }
 
     @After

@@ -47,6 +47,7 @@ public class Chat extends AppiumBasePage {
 
     public class Validate {
 
+
     }
 
     @Override
@@ -59,7 +60,7 @@ public class Chat extends AppiumBasePage {
         return activate;
     }
 
-    String unique = "Hi there! Interested in LivePerson solutions? You're in the right place. How can I help you today?";
+    String unique = "Send a message";
     @Override
     public String getPageUniqueIdentifier() throws NotInPageException {
         return unique;

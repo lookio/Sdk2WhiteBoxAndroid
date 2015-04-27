@@ -18,7 +18,8 @@ import org.openqa.selenium.ScreenOrientation;
  */
 public class FirstTestDemo extends BaseTest {
 
-    private static final String testDir = "./src/main/resources/first_test_demo/";
+    private static final String TEST_DIR = "./src/main/resources/first_test_demo/";
+    private static final String SITE_ID = "71807640";
     private DemoActivator demo = DemoActivator.getInstance();
     private ChatActivator chat = ChatActivator.getInstance();
     private static final Logger logger = Logger.getLogger(FirstTestDemo.class);
@@ -28,13 +29,13 @@ public class FirstTestDemo extends BaseTest {
     public void setUp() throws Exception {
         super.setUp(
                 AppiumDrivers.ANDROID,
-                ConfigItemsRouter.ConfigType.LECreate, testDir);
+                ConfigItemsRouter.ConfigType.LECreate, TEST_DIR);
     }
 
     @Test
     public void apiDemo() throws Exception {
         demo.chooseCostumerType(ChooseCustomerType.CustomerType.EXISTING_COSTUMER);
-        demo.feedAccountDetails("71807640", "asih@liveperson.com", "Carish74");
+        demo.feedAccountDetails(SITE_ID, "asih@liveperson.com", "Carish74");
         super.service.rotate(ScreenOrientation.LANDSCAPE);
         demo.chooseChatType(ChooseChatType.ChatType.NATIVE);
         demo.findApp("Google");
