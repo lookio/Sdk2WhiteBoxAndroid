@@ -39,11 +39,11 @@ public class EcoFirstTestDemo extends BaseTest {
 
     @Test
     public void apiDemo() throws Exception {
-        settingsActivator.connectToAccount(SITE_ID); // with skill mobile
-        infoActivator.setSkill("aaa", "mobile");
+        settingsActivator.connectToAccount(SITE_ID);
+        infoActivator.setSkill("aaaa", "mobile");
         // verify call in agent service
         demoActivator.enterChat();
-        chatActivator.sendChatMsg("Asi is the king");
+        chatActivator.sendChatMsg("This is a test message");
         chatActivator.ensSession();
 
         infoActivator.setSkill("bbb", "sales");

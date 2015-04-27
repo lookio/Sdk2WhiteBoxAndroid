@@ -12,15 +12,16 @@ public class Chat extends AppiumBasePage {
 
     private final By MSG = By.id("");
     private final By SEND = By.id("");
-    private final By HIDE_CHAT = By.id("");
+    private final By END_SESSION = By.id("");
+    private final By ACCEPT_END = By.id("");
 
     private Chat.Activate activate = this.new Activate();
     private Chat.Validate validate = this.new Validate();
 
     private WebElement msg;
     private WebElement send;
-    private WebElement hideChat;
-
+    private WebElement endSession;
+    private WebElement acceptEnd;
 
     public Chat(boolean shouldValidateOnPage, boolean shouldFailTestOnLocation) {
         super(shouldValidateOnPage, shouldFailTestOnLocation);
@@ -30,7 +31,8 @@ public class Chat extends AppiumBasePage {
     public void prepareElements() {
         msg = service.findElement(MSG, className + "=msg");
         send = service.findElement(SEND, className + "=send");
-        hideChat = service.findElement(HIDE_CHAT, className + "=hideChat");
+        endSession = service.findElement(END_SESSION, className + "=endSession");
+        acceptEnd = service.findElement(ACCEPT_END, className + "=acceptEnd");
     }
 
     public class Activate {
@@ -41,7 +43,9 @@ public class Chat extends AppiumBasePage {
         }
 
         public void ensSession() {
-            hideChat.click();
+            service.scroll("End Session");
+            endSession.click();
+            acceptEnd.click();
         }
     }
 
