@@ -30,7 +30,7 @@ public class BaseTest  {
         configureLog4J();
         service.setDriver(driver, testPath);
         if(confType != null) {
-            ConfigItemsRouter.getInstance().routeAction(confType, testPath);
+//            ConfigItemsRouter.getInstance().routeAction(confType, testPath);
         }
     }
 

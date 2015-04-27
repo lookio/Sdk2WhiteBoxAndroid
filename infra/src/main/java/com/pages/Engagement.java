@@ -22,7 +22,7 @@ public class Engagement extends AppiumBasePage {
 
     public class Activate {
         public void enterChat() throws Exception{
-            service.implicitWait(3000);
+            service.implicitWait(1500);
             Dimension dimensions = service.getDriver().manage().window().getSize();
             service.tap(dimensions.getWidth() - 20, dimensions.getHeight() / 2);
         }

@@ -26,7 +26,7 @@ public class ChatActivator {
 
     public void sendChatMsg(String msg) throws Exception {
 
-        while (chatPage.validateInPage()){
+        while (!chatPage.validateInPage()){
             try {
                 Thread.sleep(waitForPageSourceInterval);
                 timeOutInMilisec -= waitForPageSourceInterval;

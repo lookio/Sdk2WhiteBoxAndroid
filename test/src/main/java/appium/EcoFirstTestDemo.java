@@ -14,14 +14,16 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
+import org.openqa.selenium.By;
 import org.openqa.selenium.ScreenOrientation;
+import org.openqa.selenium.WebElement;
 
 /**
  * Created by asih on 18/03/2015.
  */
 public class EcoFirstTestDemo extends BaseTest {
 
-    private static final String TEST_DIR = "./src/main/resources/first_test_demo/";
+    private static final String TEST_DIR = "./src/main/resources/first_test_demo_eco/";
     private static final String SITE_ID = "89961346";
     private SettingsActivator settingsActivator = SettingsActivator.getInstance();
     private InfoActivator infoActivator = InfoActivator.getInstance();
@@ -39,9 +41,10 @@ public class EcoFirstTestDemo extends BaseTest {
 
     @Test
     public void apiDemo() throws Exception {
+
         settingsActivator.connectToAccount(SITE_ID);
         infoActivator.setSkill("aaaa", "mobile");
-        // verify call in agent service
+//        verify call in agent service
         demoActivator.enterChat();
         chatActivator.sendChatMsg("This is a test message");
         chatActivator.ensSession();

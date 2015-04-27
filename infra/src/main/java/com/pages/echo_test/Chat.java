@@ -10,10 +10,11 @@ import org.openqa.selenium.WebElement;
  */
 public class Chat extends AppiumBasePage {
 
-    private final By MSG = By.id("");
-    private final By SEND = By.id("");
-    private final By END_SESSION = By.id("");
-    private final By ACCEPT_END = By.id("");
+    private final By MSG = By.className("android.widget.LinearLayout");
+    private final By BUTTON = By.className("android.widget.Button");
+    protected final String sendText = "Send";
+    protected final String endSessionText = "End Session";
+    private final By ACCEPT_END = By.id("android:id/button1");
 
     private Chat.Activate activate = this.new Activate();
     private Chat.Validate validate = this.new Validate();
@@ -30,9 +31,7 @@ public class Chat extends AppiumBasePage {
     @Override
     public void prepareElements() {
         msg = service.findElement(MSG, className + "=msg");
-        send = service.findElement(SEND, className + "=send");
-        endSession = service.findElement(END_SESSION, className + "=endSession");
-        acceptEnd = service.findElement(ACCEPT_END, className + "=acceptEnd");
+        send = service.getElementByText(BUTTON, sendText);
     }
 
     public class Activate {
@@ -44,8 +43,8 @@ public class Chat extends AppiumBasePage {
 
         public void ensSession() {
             service.scroll("End Session");
-            endSession.click();
-            acceptEnd.click();
+            service.getElementByText(BUTTON, endSessionText).click();
+            service.findElement(ACCEPT_END, className + "=acceptEnd").click();
         }
     }
 
